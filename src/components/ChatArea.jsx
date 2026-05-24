@@ -148,7 +148,7 @@ export default function ChatArea({ roomState, nickname, onLeave }) {
     fileInputRef.current.click();
   };
 
-  const handleDownloadImage = (base64Data, filename = 'luluchat-media.jpg') => {
+  const handleDownloadImage = (base64Data, filename = 'luluoynamiyorum-media.jpg') => {
     const link = document.createElement('a');
     link.href = base64Data;
     link.download = filename;

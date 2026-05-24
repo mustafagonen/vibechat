@@ -81,7 +81,7 @@ export default function AdminPanel({ onExit }) {
           }}>
             <Shield size={32} />
           </div>
-          <h1 style={{ fontSize: '1.8rem', marginBottom: '8px', color: 'var(--text-primary)', textAlign: 'center' }}>LuluChat Arşivi</h1>
+          <h1 style={{ fontSize: '1.8rem', marginBottom: '8px', color: 'var(--text-primary)', textAlign: 'center' }}>luluoynamiyorum Arşivi</h1>
           <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', textAlign: 'center' }}>
             Hextech Günlükleri & Lobi Geçmişi Portalı
           </p>

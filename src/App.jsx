@@ -56,10 +56,10 @@ export default function App() {
   const [isAdminRoute, setIsAdminRoute] = useState(false);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [bgDimLevel, setBgDimLevel] = useState(() => {
-    return Number(localStorage.getItem('luluchat_bg_dim')) || 1;
+    return Number(localStorage.getItem('luluoynamiyorum_bg_dim')) || 1;
   });
   const [theme, setTheme] = useState(() => {
-    return localStorage.getItem('luluchat_theme') || 'dark';
+    return localStorage.getItem('luluoynamiyorum_theme') || 'dark';
   });
   const [isControlCenterCollapsed, setIsControlCenterCollapsed] = useState(false);
 
@@ -78,13 +78,13 @@ export default function App() {
 
   // Sync background brightness dimming level
   useEffect(() => {
-    localStorage.setItem('luluchat_bg_dim', bgDimLevel);
+    localStorage.setItem('luluoynamiyorum_bg_dim', bgDimLevel);
   }, [bgDimLevel]);
 
   // Sync theme attribute with document body
   useEffect(() => {
     document.body.setAttribute('data-theme', theme);
-    localStorage.setItem('luluchat_theme', theme);
+    localStorage.setItem('luluoynamiyorum_theme', theme);
   }, [theme]);
 
   // Real-time listener to room document updates (handles status transitions & deletion)

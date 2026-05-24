@@ -426,7 +426,7 @@ export default function SettingsModal({ onClose, currentTheme, onThemeToggle, bg
               </div>
 
               <div style={{ color: 'var(--text-secondary)', fontSize: '0.85rem' }}>
-                <p>💡 LuluChat modern şeffaf glassmorphism tasarımı ile oluşturulmuştur. Koyu modda loş siyah ve ateşli bordo renkleri, açık modda ise sıcak krem tonları hakimdir.</p>
+                <p>💡 luluoynamiyorum modern şeffaf glassmorphism tasarımı ile oluşturulmuştur. Koyu modda loş siyah ve ateşli bordo renkleri, açık modda ise sıcak krem tonları hakimdir.</p>
               </div>
             </div>
           )}

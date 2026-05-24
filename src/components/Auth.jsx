@@ -99,7 +99,7 @@ export default function Auth({ onJoin, urlRoomId }) {
         }}>
           <MessageSquare size={32} />
         </div>
-        <h1 style={{ fontSize: '2rem', marginBottom: '8px', color: 'var(--text-primary)', textAlign: 'center' }}>LuluChat</h1>
+        <h1 style={{ fontSize: '2rem', marginBottom: '8px', color: 'var(--text-primary)', textAlign: 'center' }}>luluoynamiyorum</h1>
         <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', textAlign: 'center' }}>
           Sihirdar Vadisi 1v1 Stratejik Haberleşme Geçidi
         </p>

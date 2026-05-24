@@ -19,7 +19,7 @@ const CONFIG_KEYS = [
 export const getSavedFirebaseConfig = () => {
   // 1. Try localStorage
   try {
-    const localConfig = localStorage.getItem('luluchat_firebase_config');
+    const localConfig = localStorage.getItem('luluoynamiyorum_firebase_config');
     if (localConfig) {
       const parsed = JSON.parse(localConfig);
       if (validateConfig(parsed)) {
@@ -56,7 +56,7 @@ export const validateConfig = (config) => {
 // Save Firebase configuration to localStorage
 export const saveFirebaseConfig = (config) => {
   if (validateConfig(config)) {
-    localStorage.setItem('luluchat_firebase_config', JSON.stringify(config));
+    localStorage.setItem('luluoynamiyorum_firebase_config', JSON.stringify(config));
     return true;
   }
   return false;
@@ -64,7 +64,7 @@ export const saveFirebaseConfig = (config) => {
 
 // Clear Firebase configuration from localStorage
 export const clearFirebaseConfig = () => {
-  localStorage.removeItem('luluchat_firebase_config');
+  localStorage.removeItem('luluoynamiyorum_firebase_config');
 };
 
 // Check if Firebase is currently active
@@ -76,7 +76,7 @@ export const isFirebaseConfigured = () => {
 const initFirebase = async () => {
   const config = getSavedFirebaseConfig();
   if (!config) {
-    console.warn("LuluChat: Firebase credentials not found. Falling back to Local Demo Mode (Mock DB).");
+    console.warn("luluoynamiyorum: Firebase credentials not found. Falling back to Local Demo Mode (Mock DB).");
     useFirebase = false;
     return;
   }
@@ -89,9 +89,9 @@ const initFirebase = async () => {
     app = initializeApp(config);
     db = getFirestore(app);
     useFirebase = true;
-    console.log("LuluChat: Firebase successfully initialized and connected!");
+    console.log("luluoynamiyorum: Firebase successfully initialized and connected!");
   } catch (error) {
-    console.error("LuluChat: Failed to initialize Firebase. Falling back to Local Demo Mode.", error);
+    console.error("luluoynamiyorum: Failed to initialize Firebase. Falling back to Local Demo Mode.", error);
     useFirebase = false;
   }
 };
