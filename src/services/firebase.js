@@ -30,14 +30,14 @@ export const getSavedFirebaseConfig = () => {
     // Ignore localStorage read errors
   }
 
-  // 2. Try env variables
+  // 2. Try env variables (with fallbacks for static production deployments)
   const envConfig = {
-    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-    appId: import.meta.env.VITE_FIREBASE_APP_ID
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY || 'AIzaSyDPVgRtMXISSvQvT5u7B50CWveQleOOga0',
+    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN || 'budgetmore-9829a.firebaseapp.com',
+    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || 'budgetmore-9829a',
+    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET || 'budgetmore-9829a.firebasestorage.app',
+    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID || '317982292168',
+    appId: import.meta.env.VITE_FIREBASE_APP_ID || '1:317982292168:web:81b2d7f050bfffd4094dfd'
   };
 
   if (validateConfig(envConfig)) {
