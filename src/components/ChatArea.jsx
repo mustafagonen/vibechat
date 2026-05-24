@@ -642,7 +642,7 @@ export default function ChatArea({ roomState, nickname, onLeave }) {
               lineHeight: '1.5', 
               marginBottom: '32px'
             }}>
-              Ondan kopmak istemediğine emin misin?
+              Savaş lobisini kapatmak ve bu geçidi bozmak istediğinize emin misiniz?
             </p>
             
             <div style={{ display: 'flex', gap: '14px' }}>
@@ -651,14 +651,14 @@ export default function ChatArea({ roomState, nickname, onLeave }) {
                 className="btn-primary" 
                 style={{ flex: 1.1, padding: '12px 14px', fontSize: '0.85rem', background: 'var(--accent-gradient-hover)' }}
               >
-                BUGÜNLÜK EVET
+                GEÇİDİ KAPAT
               </button>
               <button 
                 onClick={() => setIsDisbandConfirmOpen(false)} 
                 className="btn-secondary" 
                 style={{ flex: 1.3, padding: '12px 10px', fontSize: '0.82rem' }}
               >
-                HAYIR, KIVRANMAYA DEVAM
+                LOBİDE KAL
               </button>
             </div>
           </div>
